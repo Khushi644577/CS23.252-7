@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author Shanvi and Gyan
+ */
+class Parent {
+    void show() {
+        System.out.println("This is Parent class method");
+    }
+}
+
+// Child 1
+class Child1 extends Parent {
+    @Override
+    void show() {
+        System.out.println("This is Child1 class method");
+    }
+}
+
+// Child 2
+class Child2 extends Parent {
+    @Override
+    void show() {
+        System.out.println("This is Child2 class method");
+    }
+}
+public class Shan11 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+           // Parent reference, Child1 object
+        Parent obj;
+
+        obj = new Child1();
+        obj.show();   // calls Child1 method
+
+        obj = new Child2();
+        obj.show();   // calls Child2 method
+    }
+    
+}
